@@ -2,6 +2,7 @@ import React,{useEffect, useState} from "react";
 import { getTweets } from "./services/getTweets";
 import { getUser } from "./services/getUser";
 import TweetItem from "./components/TweetItem";
+import NewTweetModal from "./NewTweetModal";
 import "./MomentsPage.style.scss"
 
 const Moments = () =>{
@@ -22,6 +23,9 @@ const Moments = () =>{
 
     return <div className="moments-page">
                 <div className="user-info">
+                    <div className="camera-img">
+                        { NewTweetModal() }
+                    </div>
                     <img src={user?.profileImage} className="user-profile"/>
                     <div className="user-avatar-nick">
                         <div>{user?.nick}</div> 

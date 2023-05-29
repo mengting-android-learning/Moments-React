@@ -11,14 +11,21 @@
         flex-direction: column;
         align-items: flex-end;
 
+        .camera-img {
+            margin-top: 0px;
+            z-index: 10;
+            margin-right: $margin-middle;
+        }
+
         .user-profile {
-           width: 100%;
-           height: 200px;
-           object-fit: cover;
+            margin-top: -40px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
 
         .user-avatar-nick{
-            
+
             display: flex;
             align-items: center;
             margin-top: -70px;
