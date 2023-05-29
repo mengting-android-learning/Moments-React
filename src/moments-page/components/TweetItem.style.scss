@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+
+.tweet-item {
+
+    display: flex;  
+    align-items: flex-start;
+    margin-bottom: $margin-middle;
+
+    .sender-avatar {
+        width: $avatar-size;
+        height: $avatar-size;
+        object-fit: cover;
+        margin-left: $margin-middle;
+        margin-right: $margin-middle;
+    }
+    
+    .tweet-info {
+
+        flex-grow: 1;
+        margin-right: $margin-middle;
+
+        .sender-name {
+            font-weight: bold;
+            font-size: large;
+            margin-bottom: $margin-small;
+        }
+
+        .tweet-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: $margin-middle;
+        }
+
+        .tweet-comments {
+            background-color: rgb(223, 221, 221);
+        }
+    }
+
+}
+

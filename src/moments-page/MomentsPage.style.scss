@@ -1,0 +1,41 @@
+@import "../styles/variables.scss";
+
+.moments-page {
+    
+    width: 50%;
+    margin: 0 auto;
+
+    .user-info {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .user-profile {
+           width: 100%;
+           height: 200px;
+           object-fit: cover;
+        }
+
+        .user-avatar-nick{
+            
+            display: flex;
+            align-items: center;
+            margin-top: -70px;
+
+            .user-avatar {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                margin-left: $margin-small;
+                margin-right: $margin-middle;
+            }
+
+        }
+
+        
+    
+    }
+    
+}
+
